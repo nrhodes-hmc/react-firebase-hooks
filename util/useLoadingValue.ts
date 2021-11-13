@@ -70,6 +70,7 @@ export default <T, E>(getDefaultValue?: () => T): LoadingValue<T, E> => {
   };
 
   const setValue = (value?: T) => {
+    console.log('setValue', value);
     dispatch({ type: 'value', value });
   };
 
